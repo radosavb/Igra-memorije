@@ -36,7 +36,8 @@ header{
 @media only screen and (max-width: 760px) {
 
     #tabla{
-        width: 360px;   
+        width: 330px;   
+        height: 80px;
     }
     #tabla>div{
         width: calc(25% - 10px);
