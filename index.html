@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Igra memorije</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="materijal/stil.css">
+</head>
+
+<body>
+    <header class="container">
+        Igra memorije
+    </header>
+
+    <div id="glavni" class="container">
+
+        <div class="row text-light text-center py-3">
+            
+            <form class="col-12 col-sm-4 form-inline" id="forma">
+                <label for="br_karata">Unesite broj karata(12-24)</label>
+                <input style="max-width:100%" class="form-control " type="number" id="br_karata" readonly placeholder="Trenutno ne radi">
+                <input class="btn btn-primary" type="submit" value="Broj kartica" id="prihvati">
+            </form>
+
+            <div class="col-4 col-sm-2" id="nova_igra">
+                <br>
+                <input ; class="btn btn-success" type="button" value="Nova igra" id="nova_igra">
+            </div>
+
+            <div class="col-4 col-sm-3">
+                Proteklo vreme<br>
+                <div id="tajmer"></div>
+            </div>
+
+            <div class="col-4 col-sm-3">
+                Broj pokušaja
+                <div id="brojac"></div>
+            </div>
+
+        </div>
+
+    
+        <div class="my-2" id="tabla">
+            <div class="kartica" data-karta="prva">
+                <div class="prednja"><img src="materijal/slike/01.jpg" alt="prva"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            <div class="kartica" data-karta="prva">
+                <div class="prednja"><img src="materijal/slike/01.jpg" alt="prva"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+
+            <div class="kartica" data-karta="druga">
+                <div class="prednja"><img src="materijal/slike/02.jpg" alt="druga"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            <div class="kartica" data-karta="druga">
+                <div class="prednja"><img src="materijal/slike/02.jpg" alt="druga"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+
+            <div class="kartica" data-karta="treca">
+                <div class="prednja"><img src="materijal/slike/03.jpg" alt="treca"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            <div class="kartica" data-karta="treca">
+                <div class="prednja"><img src="materijal/slike/03.jpg" alt="treca"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+
+            <div class="kartica" data-karta="cetvrta">
+                <div class="prednja"><img src="materijal/slike/04.jpg" alt="cetvrta"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            <div class="kartica" data-karta="cetvrta">
+                <div class="prednja"><img src="materijal/slike/04.jpg" alt="cetvrta"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+
+            <div class="kartica" data-karta="peta">
+                <div class="prednja"><img src="materijal/slike/05.jpg" alt="peta"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            <div class="kartica" data-karta="peta">
+                <div class="prednja"><img src="materijal/slike/05.jpg" alt="peta"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+
+            <div class="kartica" data-karta="sesta">
+                <div class="prednja"><img src="materijal/slike/06.jpg" alt="sesta"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            <div class="kartica" data-karta="sesta">
+                <div class="prednja"><img src="materijal/slike/06.jpg" alt="sesta"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            
+            <div class="kartica" data-karta="sedma">
+                <div class="prednja"><img src="materijal/slike/07.jpg" alt="sedma"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            <div class="kartica" data-karta="sedma">
+                <div class="prednja"><img src="materijal/slike/07.jpg" alt="sedma"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+
+            <div class="kartica" data-karta="osma">
+                <div class="prednja"><img src="materijal/slike/08.jpg" alt="osma"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            <div class="kartica" data-karta="osma">
+                <div class="prednja"><img src="materijal/slike/08.jpg" alt="osma"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+
+            <div class="kartica" data-karta="deveta">
+                <div class="prednja"><img src="materijal/slike/09.jpg" alt="deveta"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+            <div class="kartica" data-karta="deveta">
+                <div class="prednja"><img src="materijal/slike/09.jpg" alt="deveta"></div>
+                <div class="zadnja"><img src="materijal/slike/zadnja.jpg" alt="zadnja"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="materijal/main1.js"></script>
+</body>
+
+</html>
