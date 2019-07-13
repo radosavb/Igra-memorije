@@ -1,4 +1,4 @@
-#Igra memorije 
+# Igra memorije 
 
 Igra memorije napravljena u okviru projekta IT prekvalifikacije.
 Aplikacija je napravljena u Javascript programskom jeziku.
