@@ -1,10 +1,10 @@
 
-# Igra memorije 
+# Igra memorije (Memory Game)
 # Author: Radosav Božović
 
 ## Igra memorije 
 
-Igra memorije napravljena u okviru projekta IT prekvalifikacije.
+Igra memorije napravljena u okviru projekta IT prekvalifikacije.  
 Aplikacija je napravljena u Javascript programskom jeziku.
 
 ## Online
